@@ -150,6 +150,10 @@
   color: var(--overlay-color);
 }
 
+.gif {
+  width: 50%;
+}
+
 @media(max-width: 798px) {
 
   .showcase,
@@ -168,5 +172,9 @@
 
   .text h3 {
     font-size: 1.1em;
+  }
+
+  .gif {
+    width: 100%;
   }
 }
