@@ -2,60 +2,76 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/regular.css">
   <title>Titan Rocket</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Style CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
+  <section class="showcase">
+    <header>
+      <a href="index.html">
+        <img src="img/TR_Worm.png" alt="Titan Rocket Logo">
+      </a>
+      <div class="toggle"></div>
+    </header>
 
-  <!-- Navigation -->
-  <div class="menu-bar">
-    <nav class="navbar navbar-expand-lg navbar-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/TR_Worm_Black.png" alt="Titan Rocket"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>Contact Us</h2>
+      <br>
+      <p>
+        Email: <strong>info@titanrockets.org</strong>
+      </p>
+      <br>
+      <br>
+      <h3>Are you a CSUF student that's interested?</h3>
+      <br>
+      <p>
+        Find our booth during beginning of the semester at DiscoverFest,
+        ECS Welcome Fair, or email <strong>info@titanrockets.org</strong>
+        for more info!
+      </p>
+      <br>
+      <br>
+      <h3>Are you a company interested in sponsoring us?</h3>
+      <br>
+      <p>
+        Sponsorships would greatly help us with funding club members' Rocket
+        certification fees, building our competition rocket, and providing our club
+        members industry-wide software tools to design rockets.
+        <br>
+        <br>
+        We would deeply appreciate all sponsorships and would promote the company
+        to our members and other students through showcasing the company's logo
+        on our club shirts. We look forward to hearing from you and learning more
+        about your company! Please email
+        <strong> info@titanrockets.org</strong>.
+      </p>
+    </div>
+
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </div>
 
-  <!-- Page Content -->
-  <div class="container">
-    <p>contact</p>
-  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
 
 </body>
 

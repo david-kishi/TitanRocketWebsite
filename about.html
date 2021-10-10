@@ -2,60 +2,77 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/regular.css">
   <title>Titan Rocket</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Style CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
+  <section class="showcase">
+    <header>
+      <a href="index.html">
+        <img src="img/TR_Worm.png" alt="Titan Rocket Logo">
+      </a>
+      <div class="toggle"></div>
+    </header>
 
-  <!-- Navigation -->
-  <div class="menu-bar">
-    <nav class="navbar navbar-expand-lg navbar-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/TR_Worm_Black.png" alt="Titan Rocket"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>About Us</h2>
+      <br>
+      <p>
+        The Titan Rocket Club was rebooted and established by a group of
+        students at California State University, Fullerton in Spring 2020.
+        Shortly afterwards, the club's senior research project team won
+        <strong>
+          CSUF's Engineering & Computer Science Research Project of the
+          Year (2020-21).
+        </strong>
+      </p>
+      <br>
+      <img src="img/TRassembly.gif" style="display: block; width: 100%;">
+      <br>
+      <p>
+        The club was formed to bring together students interested in aerospace,
+        specifically rockets.
+      </p>
+      <br>
+      <p>
+        Members are engaged with learning the basics of rocket science through
+        collaborative projects and working towards rocket certifications with
+        model rockets.
+      </p>
+      <br>
+      <img src="img/TRgroup-min.jpg" style="width: 100%;">
+      <br>
+      <img src="img/TRgarage-min.jpg" style="width: 100%;">
+      <img src="img/TRmodelrocket-min.jpg" style="width: 100%;">
+      <img src="img/TRdesert.jpg" style="width: 100%;">
+
+    </div>
+
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </div>
 
-  <!-- Page Content -->
-  <div class="container">
-    <p>about</p>
-  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
 
 </body>
 
